@@ -1,0 +1,376 @@
+/* Allgemein startet */
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  margin: 0;
+  background: #d0d0e2;
+  font-size: 100%;
+  width: 100%;
+  font-family: 'Aref Ruqaa', serif;
+}
+
+/* Allgemein endet */
+
+
+
+
+/* Möwenantimation startet */
+.moewe {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 2%;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+}
+
+.up {
+  transform: rotate(180deg);
+}
+
+.direction {
+  transition: transform 0.5s;
+}
+/* Möwenantimation endet */
+
+
+
+
+/* Header 1 startet */
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 6;
+}
+
+.header-image {
+  position: fixed;
+  left: 46%;
+  width: 8%;
+  text-align: center;
+  margin-top: 1%;
+}
+
+
+.headline {
+  color: #0c0c40;
+  font-size: 7.5em;
+  line-height: 1em;
+  margin-top: 10%;
+}
+
+@media screen and (max-width: 85em) {
+.headline {
+    font-size: 6.5em;
+  }
+}
+
+@media screen and (max-width: 75em) {
+.headline {
+    font-size: 6em;
+  }
+}
+
+@media screen and (max-width: 68em) {
+.headline {
+    font-size: 5.5em;
+  }
+}
+
+@media screen and (max-width: 62em) {
+.headline {
+    font-size: 5.0em;
+  }
+}
+
+@media screen and (max-width: 56em) {
+.headline {
+    font-size: 4.5em;
+  }
+}
+
+@media screen and (max-width: 52em) {
+.headline {
+    font-size: 4.0em;
+  }
+}
+
+@media screen and (max-width: 45em) {
+.headline {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width: 40em) {
+.headline {
+    font-size: 3.0em;
+  }
+}
+
+@media screen and (max-width: 35em) {
+.headline {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 29em) {
+.headline {
+    font-size: 2.0em;
+  }
+}
+/* Header 1 endet */
+
+
+
+
+
+/* Header 2 startet */
+.header-2 {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+
+.header-2 img {
+  width: 100%;
+  height: auto;
+}
+/* Header 2 endet */
+
+
+
+
+/* Navigation startet*/
+.navigation {
+  top: 0;
+  position: fixed;
+  margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 4%;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 0px grey;
+  z-index: 3;
+}
+
+@media screen and (max-width: 90em) {
+  .navigation {
+    padding-bottom: 3%;
+  }
+}
+
+li {
+  padding: 10px;
+  width: 13%;
+  display: inline-block;
+  font-family: 'Aref Ruqaa', serif;
+  font-size: 2em;
+  color: #0c0c40;
+  list-style:none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 77em) {
+  li {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 55em) {
+  li {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 45em) {
+  li {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  li {
+    font-size: 0.7em;
+  }
+}
+
+li a:visited {
+  color: #0c0c40;
+  text-decoration: none;
+}
+
+li a:link {
+  color: #0c0c40;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #cb1000;
+  text-decoration: none;
+}
+/* Navigation endet */
+
+
+
+
+/* Content beginnt */
+.content {
+  top: 0;
+  z-index: 1;
+  padding-top: 35%;
+}
+
+.content img{
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.content-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: 2;
+}
+
+.text-headline {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  font-size: 4em;
+  color: #0c0c40;
+}
+
+.text-copy {
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+  letter-spacing: 0.5pt;
+}
+
+.text-left {
+  width: 50%;
+  margin-left: 10%;
+  margin-right: 2%;
+  color: #0c0c40;
+  text-align: right;
+}
+
+.text-right {
+  width: 50%;
+  margin-right: 10%;
+  margin-left: 2%;
+  color: #cb1000;
+  text-align: left;
+}
+
+@media screen and (max-width: 85em) {
+  .text-headline {
+      font-size: 3.5em;
+    }
+
+  .text-copy {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 80em) {
+  .text-headline {
+      font-size: 3em;
+    }
+
+  .text-copy {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 60em) {
+  .text-headline {
+      font-size: 2.5em;
+    }
+
+  .text-copy {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .text-headline {
+      font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 35em) {
+  .text-headline {
+      font-size: 1.5em;
+    }
+
+    .text-copy {
+      font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 28em) {
+  .text-headline {
+      font-size: 1em;
+    }
+
+    .text-copy {
+      font-size: 0.9em;
+    }
+}
+
+
+/* Während die Text-Klassen alle auf jedes Menü übertragbar sind muss jeder neue Punkt bei dem Onepage später folgen*/
+.anfang-1 {
+  padding-top: 105%;
+}
+
+.anfang-2 {
+  padding-top: 205%;
+}
+
+.anfang-3 {
+  padding-top: 330%;
+}
+
+.anfang-4 {
+  padding-top: 475%;
+}
+
+/* Content endet */
+
+/* Button beginnt */
+.button {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  bottom: 0;
+  margin-bottom: 1%;
+  margin-top: 3%;
+  width: 6%;
+  margin-left: 47%;
+  z-index: 10;
+}
+/* Button endet */
+
+
+/* Welche Unterrichtsinhalte wurden eingebunden?
+Aus Übung 1 - dem Magazin - habe ich das Hintergrundbild mit darüberliegendem Text gemacht - display:flex und flex-direction: column/row sind daher.
+Aus Übung 4 habe ich die fancy Animation für meinen letzten Scroll-wieder-hoch-Button genommen.
+Aus Übung 7 - dem Flugzeug - habe ich dem Gegenstand genommen, der durch das Bild scrollt.
+
+Ich habe probiert das Design responsive zu machen. Es wirkt letztendlich aber mit der halben Bildschirmbreite am Besten (Breite: 800-1000px). Die Scroll-Länge der Möwe ist leider nicht responsive. Manhcmal endet sie perfekt (über dem Button), manchmal liegt sie genau auf dem Button drauf - eben je nach Bildschirmgröße. Ich würde mich nachträglich riesig über einen Tipp freuen, wie ich die responsive mache.
+
+Leider sind noch ein paar Störer in der Navigation, aber ich hoffe, dass es gefällt. Ich habe alles selber illustriert *höhö*.
+
+Hat Spaß gemacht - Danke! */
